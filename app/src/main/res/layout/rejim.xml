@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/tetrad"
+    tools:context=".Rejim">
+    <TextView
+        android:text="Режимы:"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="70sp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="210dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+           <TextView
+        android:layout_width="170dp"
+            android:layout_height="90dp"
+               android:textColor="@color/black"
+            android:text="Часовой:"
+            android:textSize="35sp"
+            android:gravity="center"
+            />
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="220dp"
+            android:textColor="@color/black"
+            android:text="Режим заключается в том, чтобы ты заходил несколько раз в день"
+            android:textSize="25sp"
+            android:gravity="center"
+            />
+        <TextView
+        android:layout_width="170dp"
+        android:layout_height="60dp"/>
+        <Button
+
+            android:onClick="dnevrejim"
+            android:layout_width="170dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/blue"
+            android:text="Выбрать"/>
+
+
+    </LinearLayout>
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="170dp"
+                android:layout_height="90dp"
+                android:text="Минутный:"
+                android:textSize="30sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:textColor="@color/black"
+                android:layout_width="170dp"
+                android:layout_height="220dp"
+                android:text="Режим заключается в том,чтобы ты зашел 1 раз и поиграл некоторое время"
+                android:textSize="25sp"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_width="170dp"
+                android:layout_height="60dp"/>
+            <Button
+               android:onClick="minutrejim"
+                android:layout_width="170dp"
+                android:layout_height="100dp"
+                android:backgroundTint="@color/blue"
+                android:text="Выбрать"/>
+
+
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>
